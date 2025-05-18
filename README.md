@@ -109,11 +109,22 @@ Snap Average daily rate measure ,
 
 total nights=
              SUM(Hotel_Project[stays_in_week_nights]) + SUM(Hotel_Project[stays_in_weekend_nights])          
-Snap total nights measure ,
+Snap of total nights measure ,
 ![Snap_1](https://user-images.githubusercontent.com/102996550/174089602-ab834a6b-62ce-4b62-8922-a1d241ec240e.jpg)
 
-- Step 10 : A line chart was also added to the report design area representing the trend of of revenue from 2018 through to 2020.On filter pane the visual is restricted to show revenue trend from January 01,2018 and onwards. While creating this visual, field named "Hotelr" was also added to the Legends bucket, thus revenue is  seggregated according the hotel type. 
-- Step 11 : A doughnurt chart was also added with Field "Hotels" on the legends and "Revenue" measure on the Values.This was done to depict percentage of revevune by hotel type
+- Step 10 : A line chart was also added to the report design area representing the trend of of revenue from 2018 through to 2020.On filter pane the visual is restricted to show revenue trend from January 01,2018 and onwards. While creating this visual, field named "Hotelr" was also added to the Legends bucket, thus revenue is  seggregated according the hotel type.
+  
+Snap of Line visual ,
+![Snap_1](https://user-images.githubusercontent.com/102996550/174089602-ab834a6b-62ce-4b62-8922-a1d241ec240e.jpg)
+
+
+  
+- Step 11 : A donut chart was also added with Field "Hotels" on the legends and "Revenue" measure on the Values.This was done to depict percentage of revevune by hotel type
+
+Snap of donut visual ,
+![Snap_1](https://user-images.githubusercontent.com/102996550/174089602-ab834a6b-62ce-4b62-8922-a1d241ec240e.jpg)
+
+  
 - Step 12 : A Matrix chart was also added with fields "reservation_status_date" and "Hotel" were on rows where as fields "required_car_park_spaces","Revenue" measure were added to values.On the same we added a measure that calculates percentage of parking lot to total vistors per night.
 
 for creating % measure following DAX expression was written;
@@ -121,10 +132,11 @@ for creating % measure following DAX expression was written;
 %_of_car_park_space = 
                      SUM(Hotel_Project[required_car_parking_spaces])/[Total_Nights],
 
-Snap of %_of_car_park_space measure ,
+Snap of Matrix visual ,
 ![Snap_1](https://user-images.githubusercontent.com/102996550/174089602-ab834a6b-62ce-4b62-8922-a1d241ec240e.jpg)
 
-- Step 13 : In the report view, under the insert tab, using image company's logo "Sunbird Hotels logo" was inserted & similarly using image option "revenue trend analysis" image o was added to the report design area. 
+- Step 13 : In the report view, under the insert tab, using image company's logo "Sunbird Hotels logo" was inserted & similarly using image option "revenue trend analysis" image o was added to the report design area.
+  
 - Step 18 : The report was then published to Power BI Service. 
  
 ![Publish_Message](https://user-images.githubusercontent.com/102996550/174094520-3a845196-97e6-4d44-8760-34a64abc3e77.jpg)
