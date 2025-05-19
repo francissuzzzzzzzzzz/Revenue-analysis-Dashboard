@@ -74,10 +74,9 @@ SELECT [hotel]
   LEFT JOIN [dbo].[Markert_Segment]b ON a.[market_segment]  =b.[market_segment]
   LEFT JOIN [dbo].[Meal_Cost]c ON a.[meal]  =c.[meal]
 
-# Snapshot of Imported table in SQL databasen
+# Snapshot of Imported table in SQL database
 
-![dashboard_snapo](https://user-images.githubusercontent.com/102996550/174096257-11f1aae5-203d-44fc-bfca-25d37faf3237.jpg)
-
+<img width="941" alt="Image" src="https://github.com/user-attachments/assets/14d18a44-c323-470d-afe1-4e4bf0e860f2" />
 - Step 4 :loaded sales table into MS Power BI desktop by using SQL statement
 
 # Snapshot of power BI Get Data from SQL server function
