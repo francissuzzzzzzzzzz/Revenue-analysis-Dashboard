@@ -8,9 +8,9 @@ This project analyses hotel revenue data to uncover insights and trends that can
 
 Key business questions addressed
 
-1	Is revenue growing by year?
-2	Should parking lot be increased
-3	What other trends can be seen in the data
+-1	Is revenue growing by year?
+-2	Should parking lot be increased
+-3	What other trends can be seen in the data
 
 
 ### Steps followed 
