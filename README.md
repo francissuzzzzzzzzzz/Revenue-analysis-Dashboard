@@ -6,7 +6,7 @@
 
 This project analyses hotel revenue data to uncover insights and trends that can inform business decisions .The dashboard provides visualizations and metrics to help hotel management understand revenue patterns,parking space utilization, and other key trends.
 
-###[1] Key business questions to be addressed
+[1] Key business questions to be addressed
 
 1	Is revenue growing by year?
 2	Should parking lot be increased
