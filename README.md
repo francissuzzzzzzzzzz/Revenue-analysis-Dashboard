@@ -6,17 +6,25 @@
 
 This project analyses hotel revenue data to uncover insights and trends that can inform business decisions .The dashboard provides visualizations and metrics to help hotel management understand revenue patterns,parking space utilization, and other key trends.
 
+Key business questions addressed
+
+1	Is revenue growing by year?
+2	Should parking lot be increased
+3	What other trends can be seen in the data
+
 
 ### Steps followed 
 
 - Step 1 : Create Database in MS SQL.
 
 for creating Database below SQL script was written;
+
 CREATE DATABASE Hotel_Revenue
 
-- Step 2 : Loaded hotel revenue dataset in the Database  by using Bulk insert code.
+- Step 2 : Loaded hotel revenue dataset into the Database  by using Bulk insert code.
 
 to load data into SQL Database below SQL script was written;
+
 
   BULK INSERT [dbo].[Sales]
   FROM "C:\Users\fsumbulero\OneDrive - Deloitte (O365D)\Hotel_Projects\2018.txt"
@@ -26,10 +34,14 @@ to load data into SQL Database below SQL script was written;
       FIELDTERMINATOR = '\t',
       ROWTERMINATOR = '\n'
   )
+
+
+  
 - Step 3 : Cleaned the data,casted all the relevant columns into its respective data type,performed left join  
-to merged Sales table(Primary) with Discount and meal tables(Secondary)
+to merge Sales table(Primary) with Discount and meal tables(Secondary)
 
 for left join below SQL script was written;
+
 
 USE [Hotel_Revenue]
 
@@ -74,6 +86,8 @@ SELECT [hotel]
   LEFT JOIN [dbo].[Markert_Segment]b ON a.[market_segment]  =b.[market_segment]
   LEFT JOIN [dbo].[Meal_Cost]c ON a.[meal]  =c.[meal]
 
+  
+
 # Snapshot of Imported table in SQL database
 
 <img width="941" alt="Image" src="https://github.com/user-attachments/assets/14d18a44-c323-470d-afe1-4e4bf0e860f2" />
@@ -87,10 +101,15 @@ SELECT [hotel]
 
 
 - Step 5 : Open power query editor & in view tab under Data preview section, check "column distribution", "column quality" & "column profile" options.
+  
 - Step 6 : It was observed that in none of the columns errors & empty values were present.
+  
 - Step 6 : In the report view, under the view tab, theme was selected.
+  
 - Step 7 : Visual filters (Slicers) were added for four fields named "Hotel", "Country",& "reservation_status_date".
+  
 - Step 8 : Four card visuals were added to the canvas, one representing Total revenue,average discount,Average daily rate and total nights.
+  
 
 Total revenue = 
                 sum(Hotel_Project[Revenue])
@@ -129,14 +148,13 @@ total nights=
       
 Snap of total nights measure ,
 
-
 <img width="79" alt="Image" src="https://github.com/user-attachments/assets/d626aeed-edcc-4bc2-ba39-022a3e6f6d8e" />
+
 
 
 - Step 10 : A line chart was also added to the report design area representing the trend of of revenue from 2018 through to 2020.On filter pane the visual is restricted to show revenue trend from January 01,2018 and onwards. While creating this visual, field named "Hotelr" was also added to the Legends bucket, thus revenue is  seggregated according the hotel type.
   
 Snap of Line visual ,
-
 
 <img width="602" alt="Image" src="https://github.com/user-attachments/assets/36d1f24a-6ff8-4b5d-97f9-5d6093c4d22c" />
 
@@ -146,8 +164,8 @@ Snap of Line visual ,
 
 Snap of donut visual ,
 
-
 <img width="172" alt="Image" src="https://github.com/user-attachments/assets/d009ec5f-cb83-485b-8ab4-704e652fd2f3" />
+
 
 
   
@@ -160,8 +178,8 @@ for creating % measure following DAX expression was written;
 
 Snap of Matrix visual ,
 
-
 <img width="250" alt="Image" src="https://github.com/user-attachments/assets/099e7082-c3d2-4761-81c8-167eda01248a" />
+
 
 
 - Step 13 : In the report view, under the insert tab, using image company's logo "Sunbird Hotels logo" was inserted & similarly using image option "revenue trend analysis" image o was added to the report design area.
