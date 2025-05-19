@@ -81,8 +81,7 @@ SELECT [hotel]
 
 # Snapshot of power BI Get Data from SQL server function
 
-![dashboard_snapo](https://user-images.githubusercontent.com/102996550/174096257-11f1aae5-203d-44fc-bfca-25d37faf3237.jpg)
-
+<img width="956" alt="Image" src="https://github.com/user-attachments/assets/ded1815c-457c-4f7e-98cf-b6dabdbe40b6" />
 - Step 5 : Open power query editor & in view tab under Data preview section, check "column distribution", "column quality" & "column profile" options.
 - Step 6 : It was observed that in none of the columns errors & empty values were present.
 - Step 6 : In the report view, under the view tab, theme was selected.
@@ -92,36 +91,32 @@ SELECT [hotel]
 Total revenue = 
                 sum(Hotel_Project[Revenue])
 Snap Total revenue measure ,
-![Snap_1](https://user-images.githubusercontent.com/102996550/174089602-ab834a6b-62ce-4b62-8922-a1d241ec240e.jpg)
-
-
+<img width="82" alt="Image" src="https://github.com/user-attachments/assets/8f10ead3-d676-4360-a85b-095624f07204" />
 average discount=
                  AVERAGE(Hotel_Project[Discount])           
 Snap average discount measure ,
-![Snap_1](https://user-images.githubusercontent.com/102996550/174089602-ab834a6b-62ce-4b62-8922-a1d241ec240e.jpg)
-
+<img width="74" alt="Image" src="https://github.com/user-attachments/assets/45acfdc7-23dc-4d88-929d-79b539d793b1" />
 Average daily rate=
                  AVERAGE(Hotel_Project[adr])           
 Snap Average daily rate measure ,
-![Snap_1](https://user-images.githubusercontent.com/102996550/174089602-ab834a6b-62ce-4b62-8922-a1d241ec240e.jpg)
-
+<img width="76" alt="Image" src="https://github.com/user-attachments/assets/2f6e8408-87d5-4402-9b40-ec9da2601d73" />
 
 total nights=
              SUM(Hotel_Project[stays_in_week_nights]) + SUM(Hotel_Project[stays_in_weekend_nights])          
 Snap of total nights measure ,
-![Snap_1](https://user-images.githubusercontent.com/102996550/174089602-ab834a6b-62ce-4b62-8922-a1d241ec240e.jpg)
+<img width="79" alt="Image" src="https://github.com/user-attachments/assets/d626aeed-edcc-4bc2-ba39-022a3e6f6d8e" />
 
 - Step 10 : A line chart was also added to the report design area representing the trend of of revenue from 2018 through to 2020.On filter pane the visual is restricted to show revenue trend from January 01,2018 and onwards. While creating this visual, field named "Hotelr" was also added to the Legends bucket, thus revenue is  seggregated according the hotel type.
   
 Snap of Line visual ,
-![Snap_1](https://user-images.githubusercontent.com/102996550/174089602-ab834a6b-62ce-4b62-8922-a1d241ec240e.jpg)
+<img width="602" alt="Image" src="https://github.com/user-attachments/assets/36d1f24a-6ff8-4b5d-97f9-5d6093c4d22c" />
 
 
   
 - Step 11 : A donut chart was also added with Field "Hotels" on the legends and "Revenue" measure on the Values.This was done to depict percentage of revevune by hotel type
 
 Snap of donut visual ,
-![Snap_1](https://user-images.githubusercontent.com/102996550/174089602-ab834a6b-62ce-4b62-8922-a1d241ec240e.jpg)
+<img width="172" alt="Image" src="https://github.com/user-attachments/assets/d009ec5f-cb83-485b-8ab4-704e652fd2f3" />
 
   
 - Step 12 : A Matrix chart was also added with fields "reservation_status_date" and "Hotel" were on rows where as fields "required_car_park_spaces","Revenue" measure were added to values.On the same we added a measure that calculates percentage of parking lot to total vistors per night.
@@ -132,23 +127,23 @@ for creating % measure following DAX expression was written;
                      SUM(Hotel_Project[required_car_parking_spaces])/[Total_Nights],
 
 Snap of Matrix visual ,
-![Snap_1](https://user-images.githubusercontent.com/102996550/174089602-ab834a6b-62ce-4b62-8922-a1d241ec240e.jpg)
+<img width="250" alt="Image" src="https://github.com/user-attachments/assets/099e7082-c3d2-4761-81c8-167eda01248a" />
 
 - Step 13 : In the report view, under the insert tab, using image company's logo "Sunbird Hotels logo" was inserted & similarly using image option "revenue trend analysis" image o was added to the report design area.
   
 - Step 18 : The report was then published to Power BI Service. 
  
-![Publish_Message](https://user-images.githubusercontent.com/102996550/174094520-3a845196-97e6-4d44-8760-34a64abc3e77.jpg)
+<img width="944" alt="Image" src="https://github.com/user-attachments/assets/367c334c-9760-48d3-9eb1-b75d56d84efb" />
 
 # Snapshot of Dashboard (Power BI Service)
 
-![dashboard_snapo](https://user-images.githubusercontent.com/102996550/174096257-11f1aae5-203d-44fc-bfca-25d37faf3237.jpg)
+<img width="955" alt="Image" src="https://github.com/user-attachments/assets/48426d6c-6032-4a70-b31f-64b7b7f025fc" />
 
  
  # Report Snapshot (Power BI DESKTOP)
 
- 
-![Dashboard_upload](https://user-images.githubusercontent.com/102996550/174074051-4f08287a-0568-4fdf-8ac9-6762e0d8fa94.jpg)
+ <img width="956" alt="Image" src="https://github.com/user-attachments/assets/43e05e0c-fcdf-4e77-958f-39f0c85779e9" />
+
 
 # Insights
 
