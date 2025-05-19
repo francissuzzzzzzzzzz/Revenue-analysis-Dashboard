@@ -132,6 +132,7 @@ Snap of total nights measure ,
 
 <img width="79" alt="Image" src="https://github.com/user-attachments/assets/d626aeed-edcc-4bc2-ba39-022a3e6f6d8e" />
 
+
 - Step 10 : A line chart was also added to the report design area representing the trend of of revenue from 2018 through to 2020.On filter pane the visual is restricted to show revenue trend from January 01,2018 and onwards. While creating this visual, field named "Hotelr" was also added to the Legends bucket, thus revenue is  seggregated according the hotel type.
   
 Snap of Line visual ,
@@ -148,6 +149,7 @@ Snap of donut visual ,
 
 <img width="172" alt="Image" src="https://github.com/user-attachments/assets/d009ec5f-cb83-485b-8ab4-704e652fd2f3" />
 
+
   
 - Step 12 : A Matrix chart was also added with fields "reservation_status_date" and "Hotel" were on rows where as fields "required_car_park_spaces","Revenue" measure were added to values.On the same we added a measure that calculates percentage of parking lot to total vistors per night.
 
@@ -161,13 +163,18 @@ Snap of Matrix visual ,
 
 <img width="250" alt="Image" src="https://github.com/user-attachments/assets/099e7082-c3d2-4761-81c8-167eda01248a" />
 
+
 - Step 13 : In the report view, under the insert tab, using image company's logo "Sunbird Hotels logo" was inserted & similarly using image option "revenue trend analysis" image o was added to the report design area.
   
-- Step 18 : The report was then published to Power BI Service. 
+  
+- Step 18 : The report was then published to Power BI Service.
+  
  
 <img width="944" alt="Image" src="https://github.com/user-attachments/assets/367c334c-9760-48d3-9eb1-b75d56d84efb" />
 
+
 # Snapshot of Dashboard (Power BI Service)
+
 
 <img width="955" alt="Image" src="https://github.com/user-attachments/assets/48426d6c-6032-4a70-b31f-64b7b7f025fc" />
 
