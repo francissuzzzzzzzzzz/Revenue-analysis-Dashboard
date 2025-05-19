@@ -77,11 +77,15 @@ SELECT [hotel]
 # Snapshot of Imported table in SQL database
 
 <img width="941" alt="Image" src="https://github.com/user-attachments/assets/14d18a44-c323-470d-afe1-4e4bf0e860f2" />
+
+
 - Step 4 :loaded sales table into MS Power BI desktop by using SQL statement
 
 # Snapshot of power BI Get Data from SQL server function
 
 <img width="956" alt="Image" src="https://github.com/user-attachments/assets/ded1815c-457c-4f7e-98cf-b6dabdbe40b6" />
+
+
 - Step 5 : Open power query editor & in view tab under Data preview section, check "column distribution", "column quality" & "column profile" options.
 - Step 6 : It was observed that in none of the columns errors & empty values were present.
 - Step 6 : In the report view, under the view tab, theme was selected.
@@ -90,20 +94,42 @@ SELECT [hotel]
 
 Total revenue = 
                 sum(Hotel_Project[Revenue])
+
+  
 Snap Total revenue measure ,
+
+
 <img width="82" alt="Image" src="https://github.com/user-attachments/assets/8f10ead3-d676-4360-a85b-095624f07204" />
+
+
 average discount=
-                 AVERAGE(Hotel_Project[Discount])           
+                 AVERAGE(Hotel_Project[Discount])  
+
+   
 Snap average discount measure ,
+
+
 <img width="74" alt="Image" src="https://github.com/user-attachments/assets/45acfdc7-23dc-4d88-929d-79b539d793b1" />
+
+
+
 Average daily rate=
                  AVERAGE(Hotel_Project[adr])           
 Snap Average daily rate measure ,
+
+
+
 <img width="76" alt="Image" src="https://github.com/user-attachments/assets/2f6e8408-87d5-4402-9b40-ec9da2601d73" />
 
+
+
 total nights=
-             SUM(Hotel_Project[stays_in_week_nights]) + SUM(Hotel_Project[stays_in_weekend_nights])          
+             SUM(Hotel_Project[stays_in_week_nights]) + SUM(Hotel_Project[stays_in_weekend_nights]) 
+
+      
 Snap of total nights measure ,
+
+
 <img width="79" alt="Image" src="https://github.com/user-attachments/assets/d626aeed-edcc-4bc2-ba39-022a3e6f6d8e" />
 
 - Step 10 : A line chart was also added to the report design area representing the trend of of revenue from 2018 through to 2020.On filter pane the visual is restricted to show revenue trend from January 01,2018 and onwards. While creating this visual, field named "Hotelr" was also added to the Legends bucket, thus revenue is  seggregated according the hotel type.
